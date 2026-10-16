@@ -1,0 +1,676 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Enzo Sacin Ruiz · CV</title>
+<meta name="description" content="Enzo Sacin Ruiz. Ingeniero industrial y CEO de Sunqu Consultoría. Dirijo empresas en territorios complejos de minería y energía, y construyo con IA lo que necesitan.">
+<link rel="canonical" href="https://enzosacin.tech/cv.html">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://enzosacin.tech/cv.html">
+<meta property="og:title" content="Enzo Sacin Ruiz">
+<meta property="og:description" content="Ingeniero industrial. Dirijo empresas en territorios complejos y construyo con IA lo que necesitan.">
+<meta property="og:image" content="https://enzosacin.tech/assets/og.jpg">
+<meta property="og:locale" content="es_PE">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0f1322">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   Tokens
+   ============================================================ */
+:root{
+  --night:#0f1322;      /* fondo */
+  --panel:#161b2e;      /* superficies */
+  --rule:#2a3150;       /* líneas de la ficha */
+  --ink:#eceef4;        /* texto principal */
+  --muted:#a2aac0;      /* texto secundario */
+  --steel:#9db8d6;      /* acento: azul acero */
+  --serif:"Instrument Serif", Georgia, "Times New Roman", serif;
+  --sans:"Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --gutter:clamp(16px, 4vw, 56px);
+  --max:1240px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--night);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6;
+  font-feature-settings:"tnum" 1;overflow-x:hidden}
+a{color:inherit;text-decoration-color:var(--steel);text-underline-offset:.2em;text-decoration-thickness:1px}
+a:hover{color:var(--steel)}
+:focus-visible{outline:2px solid var(--steel);outline-offset:3px;border-radius:2px}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+.skip{position:absolute;left:-999px;top:8px;background:var(--steel);color:var(--night);padding:8px 12px;z-index:50}
+.skip:focus{left:8px}
+.print-only{display:none !important}
+
+/* ---------- barra ---------- */
+.bar{position:sticky;top:0;z-index:20;background:rgba(15,19,34,.86);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--rule)}
+.bar .wrap{display:flex;align-items:center;gap:20px;height:60px}
+.mark{font-family:var(--serif);font-size:24px;text-decoration:none;margin-right:auto;line-height:1}
+.bar nav{display:flex;gap:22px;font-size:14px}
+.bar nav a{text-decoration:none;color:var(--muted)}
+.bar nav a:hover{color:var(--ink)}
+.btn{font:inherit;font-size:14px;cursor:pointer;border-radius:999px;padding:7px 14px;border:1px solid var(--rule);background:transparent;color:var(--ink);
+  text-decoration:none;white-space:nowrap}
+.btn:hover{border-color:var(--steel);color:var(--ink)}
+.btn.solid{background:var(--ink);color:var(--night);border-color:var(--ink);font-weight:500}
+.btn.solid:hover{background:var(--steel);border-color:var(--steel);color:var(--night)}
+@media (max-width:760px){.bar nav{display:none}.bar .wrap{gap:10px}}
+
+/* ---------- hero ---------- */
+.hero{padding:clamp(40px,8vw,104px) 0 clamp(48px,7vw,88px);border-bottom:1px solid var(--rule)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:clamp(32px,5vw,72px);align-items:end}
+.tagline{color:var(--steel);font-size:15px;margin:0 0 18px;letter-spacing:.01em}
+.name{font-family:var(--serif);font-weight:400;font-size:clamp(88px,13.4vw,200px);line-height:.84;letter-spacing:-.02em;margin:0}
+.name span{display:block}
+.name .last{padding-left:.55em}
+.lede{font-family:var(--serif);font-size:clamp(24px,2.6vw,34px);line-height:1.22;max-width:30ch;margin:clamp(28px,4vw,44px) 0 0}
+.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+
+.ficha{border:1px solid var(--rule);background:var(--panel);border-radius:4px}
+.ficha figure{margin:0;border-bottom:1px solid var(--rule)}
+.ficha img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;object-position:50% 18%;filter:grayscale(1) contrast(1.05)}
+.ficha h2{font-family:var(--serif);font-weight:400;font-size:22px;margin:0;padding:14px 18px 6px}
+.ficha dl{margin:0;padding:0 18px 12px}
+.ficha dl div{display:grid;grid-template-columns:96px 1fr;gap:12px;padding:9px 0;border-top:1px solid var(--rule);font-size:14px;line-height:1.4}
+.ficha dl div:first-child{border-top:0}
+.ficha dt{color:var(--muted)}
+.ficha dd{margin:0}
+
+/* ---------- secciones tipo ficha ---------- */
+.sec{border-bottom:1px solid var(--rule);padding:clamp(56px,8vw,104px) 0}
+.sec .wrap{display:grid;grid-template-columns:260px minmax(0,1fr);gap:clamp(24px,5vw,72px)}
+.sec h2{font-family:var(--serif);font-weight:400;font-size:clamp(34px,4vw,48px);line-height:1;margin:0}
+.sec .wrap > :first-child{position:sticky;top:92px;align-self:start}
+.sec .intro{color:var(--muted);font-size:15px;margin:12px 0 0;max-width:28ch;font-family:var(--sans);position:static}
+.prose p{max-width:62ch;margin:0 0 1.1em}
+.prose p:first-child{font-family:var(--serif);font-size:clamp(24px,2.4vw,30px);line-height:1.3;max-width:34ch}
+.prose p:last-child{margin-bottom:0}
+@media (max-width:860px){
+  .hero .wrap{grid-template-columns:1fr}
+  .ficha{max-width:420px}
+  .sec .wrap{grid-template-columns:1fr}
+  .sec .wrap > :first-child{position:static}
+}
+
+/* ---------- proyectos ---------- */
+.ventures{display:grid;gap:20px}
+.venture{border:1px solid var(--rule);border-radius:4px;padding:clamp(20px,3vw,32px);background:var(--panel)}
+.venture.lead{background:transparent;border-color:var(--steel)}
+.venture header{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px;margin-bottom:10px}
+.venture h3{font-family:var(--serif);font-weight:400;font-size:clamp(30px,3.2vw,40px);line-height:1.05;margin:0}
+.role{color:var(--steel);font-size:14px}
+.venture p{margin:0 0 12px;max-width:60ch}
+.venture .quote{font-family:var(--serif);font-style:italic;font-size:21px;line-height:1.35;color:var(--ink)}
+.venture .link{font-size:15px}
+.subs{list-style:none;margin:22px 0 0;padding:0;border-top:1px solid var(--rule)}
+.subs li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 20px;padding:14px 0;border-bottom:1px solid var(--rule);align-items:baseline}
+.subs li:last-child{border-bottom:0;padding-bottom:0}
+.subs strong{font-weight:600}
+.subs span{color:var(--muted);font-size:15px}
+.subs a{font-size:14px;white-space:nowrap}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media (max-width:640px){.pair{grid-template-columns:1fr}.subs li{grid-template-columns:1fr}}
+
+.flag{margin:24px 0 4px;padding:clamp(18px,2.6vw,26px);background:var(--panel);border:1px solid var(--rule);border-radius:4px}
+.flag header{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px;margin-bottom:6px}
+.flag h4{font-family:var(--serif);font-weight:400;font-size:clamp(28px,3vw,36px);line-height:1;margin:0;letter-spacing:.01em}
+.flag .flag-lede{font-family:var(--serif);font-size:22px;line-height:1.3}
+.reads{list-style:none;margin:16px 0 18px;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--rule)}
+.reads li{padding:12px 14px 0 0}
+.reads li + li{padding-left:14px;border-left:1px solid var(--rule)}
+.reads strong{display:block;font-weight:600;font-size:15px}
+.reads span{color:var(--muted);font-size:15px}
+@media (max-width:640px){.reads{grid-template-columns:1fr}.reads li,.reads li + li{padding:10px 0;border-left:0;border-bottom:1px solid var(--rule)}}
+
+/* ---------- cómo trabajo ---------- */
+.how{display:grid;gap:clamp(40px,5vw,56px)}
+.study h3{font-family:var(--serif);font-weight:400;font-size:clamp(30px,3.2vw,40px);line-height:1.05;margin:0 0 12px}
+.study > p{margin:0 0 14px;max-width:62ch}
+.chain{list-style:none;counter-reset:step;margin:22px 0 18px;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.chain li{counter-increment:step;position:relative;padding:16px 16px 18px;border:1px solid var(--rule);border-radius:4px;background:var(--panel)}
+.chain li::before{content:counter(step);display:block;font-family:var(--serif);font-size:30px;line-height:1;color:var(--steel);margin-bottom:10px}
+.chain li:not(:last-child)::after{content:"";position:absolute;top:30px;right:-13px;width:12px;height:1px;background:var(--steel)}
+.chain strong{display:block;font-weight:600;font-size:16px;margin-bottom:6px;line-height:1.3}
+.chain span{display:block;color:var(--muted);font-size:15px;line-height:1.5}
+.result{font-family:var(--serif);font-size:24px;line-height:1.3}
+.result b{font-weight:400;color:var(--steel)}
+.modes{list-style:none;margin:16px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.modes li{border:1px solid var(--rule);border-radius:999px;padding:5px 14px;font-size:15px}
+@media (max-width:980px){.chain{grid-template-columns:1fr 1fr}.chain li::after{display:none}}
+@media (max-width:520px){.chain{grid-template-columns:1fr}}
+.cases{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;border-top:1px solid var(--rule)}
+.case{padding:22px 24px 4px 0}
+.case + .case{padding-left:24px;border-left:1px solid var(--rule)}
+.case h3{font-family:var(--serif);font-weight:400;font-size:26px;line-height:1.1;margin:0 0 10px}
+.case p{margin:0;color:var(--muted);font-size:16px}
+.case b{color:var(--ink);font-weight:500}
+@media (max-width:980px){.cases{grid-template-columns:1fr}.case,.case + .case{padding:20px 0;border-left:0;border-bottom:1px solid var(--rule)}}
+
+/* ---------- trayectoria ---------- */
+.timeline{list-style:none;margin:0;padding:0}
+.timeline li{display:grid;grid-template-columns:170px minmax(0,1fr);gap:8px 28px;padding:22px 0;border-top:1px solid var(--rule)}
+.timeline li:first-child{border-top:0;padding-top:0}
+.when{color:var(--steel);font-size:14px;padding-top:6px}
+.timeline h3{margin:0 0 6px;font-size:19px;font-weight:600;line-height:1.3}
+.timeline h3 .org{font-weight:400;color:var(--muted)}
+.timeline p{margin:0;max-width:64ch;color:var(--muted)}
+@media (max-width:640px){.timeline li{grid-template-columns:1fr}.when{padding-top:0}}
+
+/* ---------- resultados ---------- */
+.figures{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 24px;margin:0}
+.figures div{padding:20px 0 22px;border-top:1px solid var(--rule)}
+.figures dt{font-family:var(--serif);font-size:clamp(40px,4vw,56px);line-height:1;margin-bottom:10px;white-space:nowrap}
+.figures dd{margin:0;color:var(--muted);font-size:15px;line-height:1.45;max-width:30ch}
+@media (max-width:900px){.figures{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.figures{grid-template-columns:1fr}}
+
+/* ---------- formación / habilidades ---------- */
+.edu{list-style:none;margin:0 0 40px;padding:0}
+.edu li{display:grid;grid-template-columns:170px minmax(0,1fr);gap:4px 28px;padding:14px 0;border-top:1px solid var(--rule)}
+.edu li:first-child{border-top:0;padding-top:0}
+.edu .when{padding-top:2px}
+.skills{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:24px;margin:0}
+.skills dt{color:var(--steel);font-size:14px;margin-bottom:8px}
+.skills dd{margin:0;line-height:1.75}
+@media (max-width:640px){.edu li{grid-template-columns:1fr}}
+
+/* ---------- contacto ---------- */
+.contact{display:grid;gap:0;border-top:1px solid var(--rule);margin-top:4px}
+.contact a{display:grid;grid-template-columns:140px minmax(0,1fr);gap:12px;padding:18px 0;border-bottom:1px solid var(--rule);text-decoration:none}
+.contact a span:first-child{color:var(--muted);font-size:15px;padding-top:6px}
+.contact a span:last-child{font-family:var(--serif);font-size:clamp(24px,3vw,34px);line-height:1.15;overflow-wrap:anywhere}
+.contact a:hover span:last-child{color:var(--steel)}
+.foot{padding:28px 0 40px;color:var(--muted);font-size:14px}
+@media (max-width:520px){.contact a{grid-template-columns:1fr;gap:2px}.contact a span:first-child{padding-top:0}}
+
+/* ---------- un solo momento de movimiento: la entrada del nombre ---------- */
+@media (prefers-reduced-motion:no-preference){
+  .name span{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+  .name .last{animation-delay:.12s}
+  .lede,.tagline,.hero-actions,.ficha{animation:fade .8s ease .45s both}
+  @keyframes rise{from{transform:translateY(.35em);opacity:0}to{transform:none;opacity:1}}
+  @keyframes fade{from{opacity:0}to{opacity:1}}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* ============================================================
+   Impresión: CV limpio en A4
+   ============================================================ */
+@media print{
+  @page{size:A4;margin:11mm 13mm}
+  main{display:flex;flex-direction:column}
+  #sobre-mi{order:1} #trayectoria{order:2} #proyectos{order:3} #como-trabajo{order:4} #resultados{order:5} #formacion{order:6} .hero{order:0}
+  :root{--ink:#000;--muted:#333;--steel:#000;--rule:#bbb}
+  html,body{background:#fff !important;color:#000;font-size:9.5pt;line-height:1.35}
+  *{animation:none !important;transition:none !important}
+  .bar,.hero-actions,.skip,.no-print,.ficha figure{display:none !important}
+  .print-only{display:block !important}
+  a{text-decoration:none;color:#000}
+  .hero{padding:0 0 8pt;border-bottom:1.2pt solid #000}
+  .hero .wrap{display:block;padding:0}
+  .wrap{padding:0;max-width:none}
+  .name{font-size:34pt;line-height:1;letter-spacing:0}
+  .name span{display:inline}
+  .name .last{padding-left:0}
+  .tagline{font-size:9.5pt;margin:0 0 4pt;color:#000}
+  .lede{font-size:13pt;max-width:none;margin:6pt 0 0}
+  .ficha{border:0;background:none;margin-top:6pt;max-width:none}
+  .ficha h2{display:none}
+  .ficha dl{padding:0;display:flex;flex-wrap:wrap;gap:0 14pt}
+  .ficha dl div{display:block;border:0;padding:0;font-size:9pt}
+  .ficha dt{display:inline;color:#333}
+  .ficha dt::after{content:": "}
+  .ficha dd{display:inline}
+  .sec{padding:10pt 0 0;border:0}
+  .sec .wrap{display:block}
+  .sec .wrap > :first-child{position:static}
+  .sec h2{position:static;font-family:var(--sans);font-size:11.5pt;font-weight:600;border-bottom:.8pt solid #000;padding-bottom:2pt;margin:0 0 6pt}
+  .sec .intro{display:none}
+  .prose p,.prose p:first-child{font-family:var(--sans);font-size:9.5pt;line-height:1.4;max-width:none;margin:0 0 4pt}
+  .ventures{gap:5pt}
+  .venture,.venture.lead{border:0;padding:0;background:none;break-inside:avoid}
+  .venture header{margin:0 0 1pt}
+  .venture h3{font-family:var(--sans);font-size:10pt;font-weight:600}
+  .role{font-size:9.5pt}
+  .venture p{margin:0 0 2pt;max-width:none}
+  .venture .quote{display:none}
+  .venture .link{font-size:9pt}
+  .subs{margin:2pt 0 0 10pt;border:0}
+  .subs li{display:block;border:0;padding:0;font-size:9.5pt}
+  .subs span,.subs a{font-size:9pt}
+  .subs a::before{content:"  "}
+  .pair{grid-template-columns:1fr;gap:5pt}
+  .flag{margin:3pt 0 2pt 10pt;padding:0;border:0;background:none;break-inside:avoid}
+  .flag header{margin:0}
+  .flag h4{font-family:var(--sans);font-size:9.5pt;font-weight:600}
+  .flag .flag-lede,.flag p{font-family:var(--sans);font-size:9.5pt;line-height:1.35;margin:0 0 1pt}
+  .reads{display:block;margin:0;border:0}
+  .reads li,.reads li + li{display:inline;padding:0;border:0;font-size:9pt}
+  .reads strong{display:inline;font-size:9pt}
+  .reads li:not(:last-child)::after{content:"  ·  "}
+  .how{display:block}
+  .study{break-inside:avoid;margin:0 0 5pt}
+  .study h3{font-family:var(--sans);font-size:10pt;font-weight:600;margin:0 0 1pt}
+  .study > p{font-size:9.5pt;margin:0 0 2pt;max-width:none}
+  .chain{display:block;margin:0 0 2pt 10pt}
+  .chain li{border:0;background:none;padding:0;font-size:9.5pt}
+  .chain li::before{content:counter(step) ". ";display:inline;font-family:var(--sans);font-size:9.5pt;color:#000}
+  .chain strong,.chain span{display:inline;font-size:9.5pt;color:#222}
+  .chain strong::after{content:": "}
+  .result{font-family:var(--sans);font-size:9.5pt;font-weight:600}
+  .result b{color:#000;font-weight:600}
+  .modes{display:block;margin:0}
+  .modes li{display:inline;border:0;padding:0;font-size:9.5pt}
+  .modes li:not(:last-child)::after{content:" · "}
+  .cases{display:block;border:0}
+  .case,.case + .case{padding:0 0 3pt;border:0;break-inside:avoid}
+  .case h3{font-family:var(--sans);font-size:9.5pt;font-weight:600;display:inline;margin:0}
+  .case h3::after{content:". "}
+  .case p{display:inline;font-size:9.5pt;color:#000}
+  .timeline li{grid-template-columns:33mm minmax(0,1fr);gap:0 5mm;padding:4pt 0;border:0;break-inside:avoid}
+  .timeline li:first-child{padding-top:0}
+  .when{font-size:8.5pt;padding-top:1pt;white-space:nowrap}
+  .timeline h3{font-size:10pt;margin:0 0 1pt}
+  .timeline h3 .org{color:#000}
+  .timeline p{font-size:9.5pt;max-width:none;color:#222}
+  .figures{grid-template-columns:repeat(4,1fr);gap:4pt 10pt}
+  .figures div{padding:3pt 0;border:0;break-inside:avoid}
+  .figures dt{font-family:var(--sans);font-weight:600;font-size:13pt;margin:0}
+  .figures dd{font-size:8.5pt;color:#222}
+  .edu{margin:0 0 6pt}
+  .edu li{grid-template-columns:33mm minmax(0,1fr);gap:0 5mm;padding:1pt 0;border:0}
+  .skills{grid-template-columns:repeat(4,1fr);gap:8pt}
+  .skills dt{font-weight:600;margin:0}
+  .skills dd{font-size:9pt;line-height:1.35}
+  .contact-sec{display:none}
+  .foot{display:none}
+  .print-contact{font-size:9.5pt;margin-top:4pt}
+  .reads span{font-size:9pt;color:#222}
+  .subs li > div{display:inline}
+  .subs a{margin-left:4pt}
+  .cases{display:none}
+  #formacion .wrap > div{display:grid;grid-template-columns:1fr 1.5fr;gap:0 8mm;align-items:start}
+  .edu{margin:0}
+  .edu li{grid-template-columns:20mm minmax(0,1fr);gap:0 3mm}
+  .skills{grid-template-columns:repeat(2,1fr);gap:4pt 8pt}
+  .figures dd{font-size:8pt;line-height:1.3}
+  .sec{padding-top:8pt}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#sobre-mi" data-i18n="skip">Saltar al contenido</a>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="mark" href="index.html" aria-label="Enzo Sacin Ruiz, volver al sitio">ESR</a>
+    <nav aria-label="Secciones">
+      <a href="#sobre-mi" data-i18n="nav.about">Sobre mí</a>
+      <a href="#proyectos" data-i18n="nav.ventures">Proyectos</a>
+      <a href="#trayectoria" data-i18n="nav.career">Trayectoria</a>
+      <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+    </nav>
+    <button class="btn" type="button" id="lang" aria-label="Read in English">EN</button>
+    <button class="btn solid" type="button" onclick="window.print()" data-i18n="cv">Descargar CV</button>
+  </div>
+</header>
+
+<main id="inicio">
+  <!-- =============== HERO =============== -->
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <p class="tagline" data-i18n="hero.tag">CEO de Sunqu Consultoría · Minería y energía · IA aplicada</p>
+        <h1 class="name"><span>Enzo Sacin</span> <span class="last">Ruiz</span></h1>
+        <p class="lede" data-i18n="hero.lede">Ingeniero industrial. Dirijo empresas en territorios complejos y construyo con IA lo que necesitan.</p>
+        <div class="hero-actions">
+          <a class="btn solid" href="https://wa.me/51955851357" target="_blank" rel="noopener" data-i18n="hero.talk">Escríbeme por WhatsApp</a>
+          <a class="btn" href="#trayectoria" data-i18n="hero.career">Ver trayectoria</a>
+        </div>
+      </div>
+
+      <aside class="ficha" aria-labelledby="ficha-t">
+        <figure><img src="enzo.jpg" width="720" height="900" alt="Retrato de Enzo Sacin Ruiz"></figure>
+        <h2 id="ficha-t" data-i18n="ficha.t">Ficha técnica</h2>
+        <dl>
+          <div><dt data-i18n="ficha.k1">Hoy</dt><dd data-i18n="ficha.v1">CEO, Sunqu Consultoría</dd></div>
+          <div><dt data-i18n="ficha.k2">Formación</dt><dd data-i18n="ficha.v2">Ingeniería Industrial, UTEC</dd></div>
+          <div><dt data-i18n="ficha.k3">Sectores</dt><dd data-i18n="ficha.v3">Minería y energía</dd></div>
+          <div><dt data-i18n="ficha.k4">Base</dt><dd>Lima, Perú</dd></div>
+          <div class="print-only"><dt data-i18n="ficha.k5">Contacto</dt><dd>esacinruiz@gmail.com · +51 955 851 357 · linkedin.com/in/enzosacinruiz · enzosacin.tech</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <!-- =============== SOBRE MÍ =============== -->
+  <section class="sec" id="sobre-mi" aria-labelledby="h-about">
+    <div class="wrap">
+      <h2 id="h-about" data-i18n="about.h">Sobre mí</h2>
+      <div class="prose">
+        <p data-i18n="about.p1">Siempre he trabajado entre la operación y el número. Hoy, además, construyo las herramientas.</p>
+        <p data-i18n="about.p2">Empecé en los números. En Minsur di soporte a la PMO de RR.HH. multipaís desde Compensaciones y Beneficios. En Antamina, desde Finanzas y Costos, seguí los KPIs de mina y concentradora, el EBITDA y el planeamiento a cinco años de combustible, explosivos y consumibles críticos.</p>
+        <p data-i18n="about.p3">Después pasé a dirigir proyectos. En STRACON Tech llevé un portafolio IoT de USD 3.6M para clientes mineros, con un equipo de 14 personas, desde el kick-off hasta la aceptación formal. En Enbo me hago cargo de transformación digital y del ciclo comercial completo, de la preventa al customer success.</p>
+        <p data-i18n="about.p4">Hoy dirijo Sunqu Consultoría, donde prevenimos conflictos sociales para que la operación de nuestros clientes no se detenga. En paralelo construyo productos propios con IA para problemas que conozco de cerca: seguridad en obra, subsidios por descanso médico y la propia gestión social.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== LO QUE DIRIJO Y CONSTRUYO =============== -->
+  <section class="sec" id="proyectos" aria-labelledby="h-ventures">
+    <div class="wrap">
+      <div>
+        <h2 id="h-ventures" data-i18n="ventures.h">Lo que dirijo y construyo</h2>
+      </div>
+      <div class="ventures">
+        <article class="venture lead">
+          <header>
+            <h3>Sunqu Consultoría</h3>
+            <span class="role">CEO</span>
+          </header>
+          <p data-i18n="sunqu.p">Gestión social y prevención de conflictos para minería, energía e infraestructura.</p>
+          <p class="quote" data-i18n="sunqu.q">“Prevenimos conflictos sociales para que tus operaciones no se detengan.”</p>
+          <a class="link" href="https://sunquconsultoria.com" target="_blank" rel="noopener">sunquconsultoria.com</a>
+          <div class="flag">
+            <header>
+              <h4>SUNQU AI</h4>
+              <span class="role" data-i18n="ai.r">Plataforma de inteligencia</span>
+            </header>
+            <p class="flag-lede" data-i18n="ai.l">Inteligencia para decidir en territorios complejos.</p>
+            <p data-i18n="ai.p">Conecta señales sociales, territoriales, criminales y político-institucionales, y muestra las fuentes y las fechas de cada dato.</p>
+            <ol class="reads">
+              <li><strong data-i18n="ai.1t">Descriptiva</strong> <span data-i18n="ai.1">¿Qué está pasando?</span></li>
+              <li><strong data-i18n="ai.2t">Predictiva</strong> <span data-i18n="ai.2">¿Qué podría cambiar?</span></li>
+              <li><strong data-i18n="ai.3t">Prescriptiva</strong> <span data-i18n="ai.3">¿Qué conviene hacer?</span></li>
+            </ol>
+            <a class="link no-print" href="https://sunqu-web-production.up.railway.app" target="_blank" rel="noopener" data-i18n="ai.open">Abrir SUNQU AI</a>
+          </div>
+          <ul class="subs" aria-label="Productos de Sunqu" data-i18n-attr="aria-label:sunqu.subs">
+            <li><div><strong>SunquSensor</strong> <span data-i18n="sub1">Memoria de la gestión social: actores, reportes y acuerdos.</span></div><a href="https://sunqu-web-staging.up.railway.app" target="_blank" rel="noopener" class="no-print" data-i18n="open">Abrir</a></li>
+            <li><div><strong data-i18n="sub2.t">Índice de Confianza Operativa</strong> <span data-i18n="sub2">Diagnóstico en línea.</span></div><a href="https://sunqu.enzosacin.tech" target="_blank" rel="noopener">sunqu.enzosacin.tech</a></li>
+            <li><div><strong data-i18n="sub3.t">Mapa de Riesgos de la Operación</strong> <span data-i18n="sub3">Taller en vivo.</span></div><a href="https://riesgos.enzosacin.tech" target="_blank" rel="noopener">riesgos.enzosacin.tech</a></li>
+          </ul>
+        </article>
+
+        <div class="pair">
+          <article class="venture">
+            <header><h3>SSOMAPP</h3><span class="role" data-i18n="ssoma.r">SaaS propio</span></header>
+            <p data-i18n="ssoma.p">Observaciones SSOMA en obra. El supervisor reporta con foto, la app cita la norma peruana incumplida (Ley 29783, G.050) y el contratista registra el levantamiento con evidencia. Multi-obra, US$ 100 por obra al mes.</p>
+            <a class="link" href="https://ssoma.enzosacin.tech" target="_blank" rel="noopener">ssoma.enzosacin.tech</a>
+          </article>
+          <article class="venture">
+            <header><h3>Gessalud</h3><span class="role" data-i18n="gess.r">Producto propio</span></header>
+            <p data-i18n="gess.p">Recupero de subsidios por descanso médico ante EsSalud, como servicio gestionado o como plataforma. Calcula el monto para el PLAME, avisa antes de que un caso prescriba y muestra cuánto se recuperó y cuánto se perdió.</p>
+            <a class="link" href="https://subsidios.enzosacin.tech" target="_blank" rel="noopener">subsidios.enzosacin.tech</a>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== CÓMO TRABAJO =============== -->
+  <section class="sec" id="como-trabajo" aria-labelledby="h-how">
+    <div class="wrap">
+      <div>
+        <h2 id="h-how" data-i18n="how.h">Cómo trabajo</h2>
+        <p class="intro" data-i18n="how.i">IA aplicada a la operación diaria de una empresa de servicios, sin equipo de tecnología.</p>
+      </div>
+      <div class="how">
+        <article class="study">
+          <h3 data-i18n="st1.t">Sistema multiagente para operar Sunqu</h3>
+          <p data-i18n="st1.p">Cada propuesta pasa por una cadena de agentes. Al mapear el proceso vi que el cuello de botella real era el brief y no el costeo, así que la cadena empieza ahí.</p>
+          <ol class="chain">
+            <li><strong data-i18n="ch1.t">Bot entrevistador</strong><span data-i18n="ch1">Un bot de Telegram (Claude API + SQLite) entrevista al responsable de propuestas y convierte la conversación en un brief estructurado en Excel.</span></li>
+            <li><strong data-i18n="ch2.t">Estratega de propuestas</strong><span data-i18n="ch2">Toma el brief y arma la propuesta técnica y el plan de trabajo.</span></li>
+            <li><strong data-i18n="ch3.t">Breakdown de recursos</strong><span data-i18n="ch3">Convierte el alcance en el desglose de recursos y el Excel de presupuesto.</span></li>
+            <li><strong data-i18n="ch4.t">Propuesta económica</strong><span data-i18n="ch4">Entrega el documento listo para enviar al cliente.</span></li>
+          </ol>
+          <p class="result" data-i18n="st1.r">Resultado: una propuesta técnico-comercial pasó de <b>3 días a 1</b>.</p>
+        </article>
+
+        <article class="study">
+          <h3 data-i18n="st2.t">Herramientas de IA para un equipo no técnico</h3>
+          <p data-i18n="st2.p">Sunqu Research es una aplicación web interna que el equipo usa sin tocar código. Genera consultas dirigidas, corre búsquedas en paralelo con Perplexity, enriquece los contactos ejecutivos y sintetiza un brief con Claude en unos 60 a 90 segundos. Todo queda en un historial con búsqueda.</p>
+          <ul class="modes" aria-label="Modos de Sunqu Research" data-i18n-attr="aria-label:st2.modes">
+            <li data-i18n="m1">Prospecto o empresa</li>
+            <li data-i18n="m2">Contexto para una propuesta</li>
+            <li data-i18n="m3">API o integración</li>
+          </ul>
+        </article>
+
+        <div class="cases">
+        <div class="case">
+          <h3 data-i18n="c2.t">Una empresa que corre sobre sistemas</h3>
+          <p data-i18n="c2.p">ClickUp como sistema operativo de la empresa, un BSC comercial automatizado y agentes basados en Claude para research e inteligencia antes de cada reunión.</p>
+        </div>
+        <div class="case">
+          <h3 data-i18n="c3.t">Más capacidad comercial</h3>
+          <p data-i18n="c3.p">Sunqu pasó de <b>1–2 a 5 propuestas al mes</b>.</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== TRAYECTORIA =============== -->
+  <section class="sec" id="trayectoria" aria-labelledby="h-career">
+    <div class="wrap">
+      <h2 id="h-career" data-i18n="career.h">Trayectoria</h2>
+      <ol class="timeline">
+        <li>
+          <span class="when" data-i18n="d0">Actualidad</span>
+          <div>
+            <h3>CEO <span class="org">· Sunqu Consultoría</span></h3>
+            <p data-i18n="r0">Dirijo la empresa y su ciclo comercial: 16+ proyectos concurrentes en minería y energía (Anglo American/Quellaveco, TGP, Hochschild). Escalé la capacidad comercial de 1–2 a 5 propuestas al mes y convertí la empresa en una operación AI-native.</p>
+          </div>
+        </li>
+        <li>
+          <span class="when" data-i18n="d1">Ene 2025 – Actualidad</span>
+          <div>
+            <h3>Project Manager <span class="org">· Enbo</span></h3>
+            <p data-i18n="r1">Transformación digital end-to-end y ciclo comercial completo: de preventa y SOWs a cierre, onboarding y customer success. Lidero el equipo de producto (UX, desarrollo, QA) con loops de feedback del cliente hacia el roadmap.</p>
+          </div>
+        </li>
+        <li>
+          <span class="when" data-i18n="d2">Feb 2024 – Ene 2025</span>
+          <div>
+            <h3>Agile Project Manager <span class="org">· STRACON Tech</span></h3>
+            <p data-i18n="r2">Portafolio IoT de USD 3.6M para clientes mineros enterprise (Antamina, Anglo American, Collahuasi) con un equipo multidisciplinario de 14. Delivery completo: kick-off, pruebas de campo, UAT y aceptación formal, más control financiero del portafolio.</p>
+          </div>
+        </li>
+        <li>
+          <span class="when" data-i18n="d3">Dic 2022 – Jun 2023</span>
+          <div>
+            <h3>Finance &amp; Costs <span class="org">· Antamina</span></h3>
+            <p data-i18n="r3">KPIs de mina, concentradora y resultados financieros (Gross Revenue, EBITDA); planeamiento a 5 años de combustible, explosivos y consumibles críticos; análisis de precio, volumen y eficiencia.</p>
+          </div>
+        </li>
+        <li>
+          <span class="when">Nov 2021 – Nov 2022</span>
+          <div>
+            <h3>Compensation &amp; Benefits <span class="org">· Minsur</span></h3>
+            <p data-i18n="r4">Soporte a la PMO de RR.HH. multipaís: objetivos alineados al negocio, entrega a tiempo y en presupuesto. Despliegue de Workplace a 350 usuarios y desarrollo de RPA.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- =============== RESULTADOS =============== -->
+  <section class="sec" id="resultados" aria-labelledby="h-results">
+    <div class="wrap">
+      <h2 id="h-results" data-i18n="results.h">Resultados</h2>
+      <dl class="figures">
+        <div><dt>3×</dt><dd data-i18n="f1">el valor del contrato original, vendiendo alcance después de la adjudicación</dd></div>
+        <div><dt>USD 3.6M</dt><dd data-i18n="f2">en portafolio IoT para minería enterprise: Antamina, Anglo American, Collahuasi</dd></div>
+        <div><dt>3d → 1d</dt><dd data-i18n="f3">para armar una propuesta técnico-comercial, con un sistema multi-agente de IA</dd></div>
+        <div><dt>32</dt><dd data-i18n="f4">personas lideradas en campo</dd></div>
+        <div><dt>95%</dt><dd data-i18n="f5">de NPS en Plaza Quellaveco: activaciones con ~3,000 asistentes y roll-out en 6 sedes para Anglo American</dd></div>
+        <div><dt>16+</dt><dd data-i18n="f6">proyectos concurrentes en 6 cuentas de minería y energía</dd></div>
+        <div><dt>S/ 3M</dt><dd data-i18n="f7">de presupuesto gestionado</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- =============== FORMACIÓN Y HABILIDADES =============== -->
+  <section class="sec" id="formacion" aria-labelledby="h-edu">
+    <div class="wrap">
+      <h2 id="h-edu" data-i18n="edu.h">Formación y habilidades</h2>
+      <div>
+        <ul class="edu">
+          <li><span class="when">UTEC · 2025</span><div><strong data-i18n="e1.t">Posgrado</strong>, <span data-i18n="e1">Diseño e implementación de agentes IA</span></div></li>
+          <li><span class="when">UTEC</span><div><strong data-i18n="e2.t">Ingeniería Industrial</strong>, <span data-i18n="e2">quinto superior</span></div></li>
+          <li><span class="when">Henry</span><div><strong>Fullstack Development</strong></div></li>
+        </ul>
+        <dl class="skills">
+          <div><dt data-i18n="s1.t">Comercial</dt><dd data-i18n="s1">Prospección<br>Propuestas y SOWs<br>Negociación<br>Pricing y márgenes</dd></div>
+          <div><dt>Delivery</dt><dd data-i18n="s2">Agile / Scrum<br>Gestión de portafolios<br>UAT<br>Control presupuestal</dd></div>
+          <div><dt data-i18n="s3.t">IA y datos</dt><dd data-i18n="s3">Agentes Claude<br>LangChain<br>Python<br>RPA<br>Django</dd></div>
+          <div><dt data-i18n="s4.t">Herramientas</dt><dd>ClickUp<br>Excel<br>Workplace</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== CONTACTO =============== -->
+  <section class="sec contact-sec" id="contacto" aria-labelledby="h-contact">
+    <div class="wrap">
+      <div>
+        <h2 id="h-contact" data-i18n="contact.h">Conversemos</h2>
+        <p class="intro" data-i18n="contact.i">Si quieres saber qué hace Sunqu, entra a sunquconsultoria.com. Si quieres hablar conmigo, aquí me encuentras.</p>
+      </div>
+      <div class="contact">
+        <a href="https://wa.me/51955851357" target="_blank" rel="noopener"><span>WhatsApp</span><span>+51 955 851 357</span></a>
+        <a href="mailto:esacinruiz@gmail.com"><span>Email</span><span>esacinruiz@gmail.com</span></a>
+        <a href="https://www.linkedin.com/in/enzosacinruiz/" target="_blank" rel="noopener"><span>LinkedIn</span><span>in/enzosacinruiz</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">© 2026 Enzo Sacin Ruiz · Lima, Perú</div>
+</footer>
+
+<script>
+/* ============================================================
+   Traducciones. El español vive en el HTML; aquí solo el inglés.
+   Para editar un texto en inglés, busca su clave (data-i18n).
+   ============================================================ */
+const EN = {
+  "skip":"Skip to content",
+  "nav.about":"About","nav.ventures":"Ventures","nav.career":"Career","nav.contact":"Contact",
+  "cv":"Download CV",
+  "hero.tag":"CEO of Sunqu Consultoría · Mining and energy · Applied AI",
+  "hero.lede":"Industrial engineer. I run companies in complex territories and build with AI what they need.",
+  "hero.talk":"Message me on WhatsApp","hero.career":"See my career",
+  "ficha.t":"Spec sheet",
+  "ficha.k1":"Now","ficha.v1":"CEO, Sunqu Consultoría",
+  "ficha.k2":"Education","ficha.v2":"Industrial Engineering, UTEC",
+  "ficha.k3":"Sectors","ficha.v3":"Mining and energy",
+  "ficha.k4":"Based in","ficha.k5":"Contact",
+  "about.h":"About me",
+  "about.p1":"I have always worked between the operation and the numbers. Today I also build the tools.",
+  "about.p2":"I started in the numbers. At Minsur I supported the multi-country HR PMO from Compensation & Benefits. At Antamina, in Finance & Costs, I tracked mine and concentrator KPIs, EBITDA, and the five-year plan for fuel, explosives, and critical consumables.",
+  "about.p3":"Then I moved into running projects. At STRACON Tech I led a USD 3.6M IoT portfolio for mining clients, with a team of 14, from kick-off to formal acceptance. At Enbo I lead digital transformation and the full commercial cycle, from presales to customer success.",
+  "about.p4":"Today I run Sunqu Consultoría, where we prevent social conflicts so our clients' operations don't stop. Alongside it I build my own AI products for problems I know up close: on-site safety, medical-leave subsidies, and social management itself.",
+  "ventures.h":"What I run and build",
+  "sunqu.p":"Social management and conflict prevention for mining, energy, and infrastructure.",
+  "sunqu.q":"“We prevent social conflicts so your operations don't stop.”",
+  "sunqu.subs":"Sunqu products",
+  "sub1":"The memory of social management: stakeholders, reports, and agreements.",
+  "open":"Open",
+  "sub2.t":"Operational Trust Index","sub2":"Online assessment.",
+  "sub3.t":"Operational Risk Map","sub3":"Live workshop.",
+  "ssoma.r":"My own SaaS",
+  "ssoma.p":"On-site safety (SSOMA) observations. The supervisor reports with a photo, the app cites the breached Peruvian regulation (Law 29783, G.050), and the contractor logs the fix with evidence. Multi-site, US$ 100 per site per month.",
+  "gess.r":"My own product",
+  "gess.p":"Recovery of medical-leave subsidies from EsSalud, as a managed service or as a platform. It calculates the amount for PLAME, warns before a case expires, and shows how much was recovered and how much was lost.",
+  "ai.r":"Intelligence platform",
+  "ai.l":"Intelligence for deciding in complex territories.",
+  "ai.p":"It connects social, territorial, criminal, and political-institutional signals, and shows the source and date of every data point.",
+  "ai.1t":"Descriptive","ai.1":"What is happening?",
+  "ai.2t":"Predictive","ai.2":"What could change?",
+  "ai.3t":"Prescriptive","ai.3":"What should we do?",
+  "ai.open":"Open SUNQU AI",
+  "st1.t":"A multi-agent system to run Sunqu",
+  "st1.p":"Every proposal goes through a chain of agents. When I mapped the process, I saw the real bottleneck was the brief, not the costing, so the chain starts there.",
+  "ch1.t":"Interviewer bot","ch1":"A Telegram bot (Claude API + SQLite) interviews the proposals lead and turns the conversation into a structured brief in Excel.",
+  "ch2.t":"Proposal strategist","ch2":"Takes the brief and builds the technical proposal and the work plan.",
+  "ch3.t":"Resource breakdown","ch3":"Turns the scope into a resource breakdown and the budget spreadsheet.",
+  "ch4.t":"Economic proposal","ch4":"Delivers the client-ready document.",
+  "st1.r":"Result: a technical-commercial proposal went from <b>3 days to 1</b>.",
+  "st2.t":"AI tools for a non-technical team",
+  "st2.p":"Sunqu Research is an internal web app the team uses without touching code. It generates targeted queries, runs parallel searches with Perplexity, enriches executive contacts, and synthesizes a brief with Claude in about 60 to 90 seconds. Everything is kept in a searchable history.",
+  "st2.modes":"Sunqu Research modes",
+  "m1":"Prospect or company","m2":"Context for a proposal","m3":"API or integration",
+  "how.h":"How I work",
+  "how.i":"AI applied to the daily operation of a services company, with no tech team.",
+  "c1.t":"Proposals in a day",
+  "c1.p":"A multi-agent system turns a brief into a fully costed technical-commercial proposal. Turnaround went from <b>3 days to 1</b>.",
+  "c2.t":"A company that runs on systems",
+  "c2.p":"ClickUp as the company's operating system, an automated commercial BSC, and Claude-based agents for research and pre-meeting intelligence.",
+  "c3.t":"More commercial capacity",
+  "c3.p":"Sunqu went from <b>1–2 to 5 proposals a month</b>.",
+  "career.h":"Career",
+  "d0":"Present","d1":"Jan 2025 – Present","d2":"Feb 2024 – Jan 2025","d3":"Dec 2022 – Jun 2023",
+  "r0":"I run the company and its commercial cycle: 16+ concurrent projects in mining and energy (Anglo American/Quellaveco, TGP, Hochschild). Scaled commercial capacity from 1–2 to 5 proposals a month and turned the company into an AI-native operation.",
+  "r1":"End-to-end digital transformation and full commercial cycle: from presales and SOWs to closing, onboarding, and customer success. I lead the product team (UX, development, QA) with client feedback loops into the roadmap.",
+  "r2":"USD 3.6M IoT portfolio for enterprise mining clients (Antamina, Anglo American, Collahuasi) with a multidisciplinary team of 14. Full delivery: kick-off, field testing, UAT, and formal acceptance, plus portfolio financial control.",
+  "r3":"Mine, concentrator, and financial KPIs (Gross Revenue, EBITDA); 5-year planning of fuel, explosives, and critical consumables; price, volume, and efficiency analysis.",
+  "r4":"Support to the multi-country HR PMO: business-aligned objectives, on-time and on-budget delivery. Deployed Workplace to 350 users and built RPA.",
+  "results.h":"Results",
+  "f1":"original contract value, by selling scope after the award",
+  "f2":"in IoT portfolio for enterprise mining: Antamina, Anglo American, Collahuasi",
+  "f3":"to build a technical-commercial proposal, with a multi-agent AI system",
+  "f4":"people led in the field",
+  "f5":"NPS at Plaza Quellaveco: activations with ~3,000 attendees, rolled out across 6 sites for Anglo American",
+  "f6":"concurrent projects across 6 mining and energy accounts",
+  "f7":"budget managed",
+  "edu.h":"Education and skills",
+  "e1.t":"Postgraduate","e1":"Design and implementation of AI agents",
+  "e2.t":"Industrial Engineering","e2":"top fifth of class",
+  "s1.t":"Commercial","s1":"Prospecting<br>Proposals and SOWs<br>Negotiation<br>Pricing and margins",
+  "s2":"Agile / Scrum<br>Portfolio management<br>UAT<br>Budget control",
+  "s3.t":"AI and data","s3":"Claude agents<br>LangChain<br>Python<br>RPA<br>Django",
+  "s4.t":"Tools",
+  "contact.h":"Let's talk",
+  "contact.i":"To learn what Sunqu does, visit sunquconsultoria.com. To talk to me, this is where to find me."
+};
+
+(function(){
+  const nodes = document.querySelectorAll('[data-i18n]');
+  const ES = {};
+  nodes.forEach(n => { ES[n.dataset.i18n] = n.innerHTML; });
+  const attrNodes = document.querySelectorAll('[data-i18n-attr]');
+  attrNodes.forEach(n => { const [a,k] = n.dataset.i18nAttr.split(':'); ES[k] = n.getAttribute(a); });
+  const btn = document.getElementById('lang');
+  const meta = {
+    es:{title:"Enzo Sacin Ruiz", label:"Read in English", next:"EN"},
+    en:{title:"Enzo Sacin Ruiz", label:"Leer en español", next:"ES"}
+  };
+  function apply(lang){
+    const dict = lang === 'en' ? EN : ES;
+    nodes.forEach(n => { const v = dict[n.dataset.i18n]; if (v != null) n.innerHTML = v; });
+    attrNodes.forEach(n => { const [a,k] = n.dataset.i18nAttr.split(':'); const v = dict[k]; if (v != null) n.setAttribute(a, v); });
+    document.documentElement.lang = lang;
+    btn.textContent = meta[lang].next;
+    btn.setAttribute('aria-label', meta[lang].label);
+    try { localStorage.setItem('lang', lang); } catch(e) {}
+  }
+  let start = 'es';
+  const q = new URLSearchParams(location.search).get('lang');
+  if (q === 'en' || q === 'es') start = q;
+  else { try { if (localStorage.getItem('lang') === 'en') start = 'en'; } catch(e) {} }
+  if (start === 'en') apply('en');
+  btn.addEventListener('click', () => apply(document.documentElement.lang === 'en' ? 'es' : 'en'));
+})();
+</script>
+</body>
+</html>
